@@ -21,7 +21,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: EthanJia0627
-          SETTING_JSON: profile-3d-contrib/settings.json
 
       - name: Commit & push
         run: |
