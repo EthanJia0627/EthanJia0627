@@ -16,15 +16,18 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v6
-        with:
-          python-version: "3.11"
+      - name: Install Zig
+        run: |
+          curl -L https://ziglang.org/download/0.15.2/zig-x86_64-linux-0.15.2.tar.xz -o zig.tar.xz
+          tar -xf zig.tar.xz
+          echo "$PWD/zig-x86_64-linux-0.15.2" >> "$GITHUB_PATH"
 
       - name: Clone jstrieb/github-stats
         run: git clone --depth=1 https://github.com/jstrieb/github-stats.git _stats
 
-      - name: Install deps
-        run: pip install -r _stats/requirements.txt
+      - name: Build github-stats
+        working-directory: _stats
+        run: zig build --release
 
       - name: Generate stats images
         working-directory: _stats
@@ -32,12 +35,12 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: EthanJia0627
           EXCLUDE_FORKED_REPOS: "true"
-        run: python generate_images.py
+        run: ./zig-out/bin/github-stats
 
       - name: Copy languages card to repo root
         run: |
           mkdir -p generated
-          cp _stats/generated/languages.svg generated/languages.svg
+          cp _stats/languages.svg generated/languages.svg
 
       - name: Commit & push
         run: |
