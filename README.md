@@ -1,36 +1,113 @@
-# Yiyang (Ethan) Jia
+<!-- 🌊 Hero Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hi%2C%20I'm%20Ethan%20%F0%9F%91%8B&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Continual%20Learning%20%C2%B7%20Robotics%20%C2%B7%20Humanoids&descSize=18&descAlignY=60" alt="header" />
+</p>
 
-I'm a PhD student in Computer Science at University College London (UCL). I study **continual learning in robotics**: how can a robot learn a new skill without losing an old one, and recognise when to use what it already knows?
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=720&lines=PhD+Student+in+Computer+Science+%40+UCL;Continual+Learning+in+Robotics;Learning+and+Reusing+Humanoid+Skills" alt="UCL Computer Science PhD student researching continual learning in robotics" />
+</p>
 
-My current work focuses on humanoid robots. I'm interested in what happens when a new request arrives while a robot is already moving: how should it adapt when no one tells it exactly where one task ends and the next begins?
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=EthanJia0627&style=for-the-badge&color=36BCF7&label=PROFILE+VIEWS" alt="visitors" />
+  <img src="https://img.shields.io/github/followers/EthanJia0627?style=for-the-badge&logo=github&color=36BCF7&labelColor=0d1117" alt="followers" />
+</p>
 
-## Selected research
+<p align="center">
+  <a href="mailto:yiyang.jia.24@ucl.ac.uk"><img src="https://img.shields.io/badge/Email-yiyang.jia.24%40ucl.ac.uk-blue?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://arxiv.org/abs/2512.12713"><img src="https://img.shields.io/badge/arXiv-2512.12713-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Paper"></a>
+  <img src="https://img.shields.io/badge/Location-London-lightgrey?style=flat-square&logo=googlemaps&logoColor=white" alt="Location">
+</p>
 
-**Self-motivated growing neural network for adaptive architecture via local structural plasticity**
+---
 
-Yiyang Jia and Chengxu Zhou · *Neurocomputing*, 2026
+### 🚀 About Me
 
-We studied whether a robot controller needs a fixed-size network. In SMGrNN, local rules let the network add or prune neurons as it learns a control task.
+I'm **Yiyang (Ethan) Jia**, a PhD student in Computer Science at **University College London (UCL)**. I study **continual learning in robotics**: how can a robot learn a new skill without losing an old one, and recognise when to use what it already knows?
+
+My current work focuses on humanoids. When a new request arrives while the robot is already moving, how should it adapt without being told exactly where one task ends and the next begins?
+
+Previously, I worked on embodied intelligence at the Institute of Automation, Chinese Academy of Sciences (CASIA).
+
+- 🎓 **UCL** — MSc Robotics and AI, **Distinction (76.71/100)**
+- 🎓 **UESTC** — BEng Robot Engineering, GPA **3.93/4.0**, National Scholarship
+- 🧠 **Interests** — Robot perception / manipulation / interaction, RL, biologically-inspired AI
+
+---
+
+### 🔬 Research Highlights
+
+#### 📈 Self-Motivated Growing Neural Network (SMGrNN) <sub>*Neurocomputing, 2026*</sub>
+Yiyang Jia and Chengxu Zhou. We studied whether a robot controller needs a fixed-size network: local rules let the network add or prune neurons as it learns a control task.
 
 [Journal article](https://doi.org/10.1016/j.neucom.2026.134581) · [arXiv](https://arxiv.org/abs/2512.12713)
 
-**ForesightSafety-VLA: A unified diagnostic safety benchmark for vision-language-action models**
-
-Mingyang Lyu, Yinqian Sun, Yiyang Jia et al. · *IROS*, 2026
-
-A robot can finish a task and still do something unsafe along the way. Our benchmark measures both task success and risks during execution across 66 simulated scenarios.
+#### 🛡️ ForesightSafety-VLA <sub>*IROS, 2026*</sub>
+Mingyang Lyu, Yinqian Sun, Yiyang Jia et al. A robot can finish a task and still do something unsafe along the way. Our benchmark tracks both success and risks during execution across **66 RoboTwin scenarios**.
 
 [Paper](https://arxiv.org/abs/2606.27079) · [Code and demos](https://github.com/tuotuoLyu/ForesightSafety-VLA)
 
-## Background
+#### 🧠 Dynamic SNN for Embodied Continual Learning
+- Continual learning framework based on dynamic spiking neural networks for task-agnostic structural adaptation.
+- SNN-RL training stack with LIF neurons and surrogate gradients on DMControl.
 
-Before my PhD, I worked on embodied intelligence at the Institute of Automation, Chinese Academy of Sciences. I hold an MSc in Robotics and AI (Distinction) from UCL and a BEng in Robot Engineering from the University of Electronic Science and Technology of China.
+#### 🐒 Self-Recognition in Embodied Intelligence
+- Interdisciplinary work connecting AI self-recognition with experiments on bodily self-recognition.
+- Isaac Lab and DreamerV3 for multi-perspective self-recognition.
 
-[Email me at UCL](mailto:yiyang.jia.24@ucl.ac.uk)
+---
 
-<details>
-<summary>GitHub activity</summary>
+### 🛠️ Technical Skills
 
-![Contribution history](./profile-3d-contrib/profile-night-rainbow.svg)
+| Category | Tools & Technologies |
+| :--- | :--- |
+| **Languages & Frameworks** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![ROS](https://img.shields.io/badge/-ROS-22314E?style=flat-square&logo=ros&logoColor=white) |
+| **Simulators** | `Isaac Lab` · `MuJoCo` · `DMControl` · `RoboTwin` |
+| **Algorithms** | RL (PPO, DreamerV3) · Imitation Learning (DAgger) · NMPC · Dynamic Graph SNN |
 
-</details>
+---
+
+### 🏆 Selected Achievements
+
+- **MSc with Distinction**, UCL — Computer Vision 89.03, Legged Robotics 80.47
+- **National Scholarship** (2021) & **Outstanding Engineer** award (2023)
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EthanJia0627&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=FF6F61&currStreakLabel=36BCF7" alt="streak" />
+</p>
+
+<!-- 🎲 3D Contribution Chart — generated by .github/workflows/3d-contrib.yml -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EthanJia0627/EthanJia0627/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution chart" />
+</p>
+
+<!-- 🐍 Contribution Snake — generated by .github/workflows/snake.yml -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EthanJia0627/EthanJia0627/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
+</p>
+
+<!-- 💻 Languages — generated by .github/workflows/languages.yml -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EthanJia0627/EthanJia0627/main/generated/languages.svg" alt="languages" width="500" />
+</p>
+
+<p align="center">
+  <img src="./generated/activity.svg" alt="Daily GitHub contributions over the last 31 days" />
+</p>
+
+---
+
+### 📬 Contact
+
+- ✉️ **Email** — [yiyang.jia.24@ucl.ac.uk](mailto:yiyang.jia.24@ucl.ac.uk)
+- 📄 **arXiv** — [2512.12713](https://arxiv.org/abs/2512.12713)
+- 🌐 **English** — IELTS 7.5
+
+<p align="center"><i>"Exploring the intersection of biological plasticity and robotic autonomy."</i></p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" alt="footer" />
+</p>
